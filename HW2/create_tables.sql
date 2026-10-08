@@ -26,6 +26,5 @@ CREATE TABLE Enrollment (
 	id SERIAL PRIMARY KEY,
 	student_id INTEGER NOT NULL REFERENCES Student(id),
 	course_id INTEGER NOT NULL REFERENCES Course(id),
-	grade INTEGER,
-	UNIQUE (student_id, course_id)
+	grade INTEGER
 )
